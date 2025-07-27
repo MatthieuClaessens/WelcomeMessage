@@ -1,0 +1,4 @@
+name: WelcomeMessage
+version: 1.0
+main: org.welcomemessage.WelcomeMessage
+api-version: 1.21
