@@ -7,13 +7,23 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerListener implements Listener {
+    private final WelcomeMessage plugin;
+
+    public PlayerListener(WelcomeMessage plugin) {
+        this.plugin = plugin;
+    }
+
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        Bukkit.broadcastMessage("§a+ " + event.getPlayer().getName() + " §7joined the server");
+        String joinmsg = plugin.getConfig().getString("messages.join", "§a+ §6%player% §7joined the server");
+        joinmsg = joinmsg.replace("%player%", event.getPlayer().getName());
+        Bukkit.broadcastMessage(joinmsg);
     }
 
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event){
-        Bukkit.broadcastMessage("§c- " + event.getPlayer().getName() + " §7left the server");
+        String quitmsg = plugin.getConfig().getString ("messages.quit", "§c- §6%player% §7left the server");
+        quitmsg = quitmsg.replace("%player%", event.getPlayer().getName());
+        Bukkit.broadcastMessage(quitmsg);
         }
 }
