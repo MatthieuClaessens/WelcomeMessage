@@ -11,5 +11,5 @@
 #+--------------------------------------------------------------+
 #################################################################
 
-join-message: "§a+ %player% §7joined the server"
-quit-message: "§c- %player% §7left the server"
+join-message: "§a+ §6%player% §7joined the server"
+quit-message: "§c- §6%player% §7left the server"
