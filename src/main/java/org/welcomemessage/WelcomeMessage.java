@@ -15,7 +15,8 @@ public class WelcomeMessage extends JavaPlugin {
     "     \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___|_|  |_|___/\\__, |",
     "                                                        __/ |",
     "                                                       |___/",
-    "By Nenfal"
+    " Version 1.0.0 By Nenfal",
+    " https://github.com/MatthieuClaessens/WelcomeMessage"
     };
 
     @Override
