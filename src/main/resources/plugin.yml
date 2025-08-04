@@ -2,10 +2,13 @@ name: WelcomeMessage
 version: 1.0
 main: org.welcomemessage.WelcomeMessage
 api-version: 1.21
+description: |-
+  §6§lᴡᴇʟᴄᴏᴍᴇᴍꜱɢ §8§l» §7ᴀᴅᴠᴀɴᴄᴇᴅ §bᴊᴏɪɴ §8▪ §bQᴜɪᴛ §8▪ §bᴡᴇʟᴄᴏᴍᴇ §aᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛꜱ
+  §61.21+ §7compatible §7| §egithub.com/MatthieuClaessens/
 
 commands:
   wmreload:
     description: Reload the plugin configuration.
     usage: /wmreload
     permission: welcomemessage.reload
-    permission-message: You do not have permission to reload the config.
+    permission-message: "§6§lᴡᴇʟᴄᴏᴍᴇᴍꜱɢ §7» §cYou don't have permission to reload the config!"

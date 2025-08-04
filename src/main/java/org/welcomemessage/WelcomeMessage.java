@@ -26,16 +26,17 @@ public class WelcomeMessage extends JavaPlugin {
         }
         getLogger().info("WelcomeMessage plugin activated! Version 1.0");
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
+        getConfig();
     }
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("wmreload")) {
             if (!sender.hasPermission("welcomemessage.reload")) {
-                sender.sendMessage("§6&lᴡᴇʟᴄᴏᴍᴇᴍꜱɢ\n §7»\n §cYou don't have permission to use this command.");
+                sender.sendMessage("§6§lᴡᴇʟᴄᴏᴍᴇᴍꜱɢ §8§l» §cYou don't have permission to use this command.");
                 return true;
             }
             reloadConfig();
-            sender.sendMessage("§6&lᴡᴇʟᴄᴏᴍᴇᴍꜱɢ\n §7»\n §aConfig reloaded!");
+            sender.sendMessage("§6§lᴡᴇʟᴄᴏᴍᴇᴍꜱɢ §8§l» §aConfig reloaded!");
             getLogger().info("Config reloaded by " + sender.getName());
             return true;
         }
