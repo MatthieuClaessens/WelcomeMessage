@@ -1,0 +1,40 @@
+#
+#   __          __  _                          __  __
+#   \ \        / / | |                        |  \/  |
+#   \ \  /\  / /__| | ___ ___  _ __ ___   ___| \  / |___  __ _
+#   \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ |\/| / __|/ _` |
+#   \  /\  /  __/ | (_| (_) | | | | | |  __/ |  | \__ \ (_| |
+#   \/  \/ \___|_|\___\___/|_| |_| |_|\___|_|  |_|___/\__, |
+# 1.0.0                                                __/ |
+# By Nenfal                                           |___/
+# https://github.com/MatthieuClaessens/WelcomeMessage
+#
+# Archivo de idioma Español (España)
+
+# Mensajes del Plugin
+plugin:
+  enabled: "&a¡Plugin WelcomeMessage activado! Versión 1.0"
+  disabled: "&cPlugin WelcomeMessage desactivado."
+  config-reloaded: "&6&lWELCOMEMSG &8&l» &a¡Configuración recargada!"
+  languages-reloaded: "&6&lWELCOMEMSG &8&l» &a¡Idiomas recargados!"
+
+# Mensajes de Jugadores
+messages:
+  welcome: "&e¡Bienvenido &6%player% &eal servidor!"
+  join: "&a+ &6%player% &7se unió al servidor"
+  quit: "&c- &6%player% &7salió del servidor"
+
+# Mensajes de Comandos
+commands:
+  no-permission: "&6&lWELCOMEMSG &8&l» &cNo tienes permisos para usar este comando."
+  reload-success: "&6&lWELCOMEMSG &8&l» &a¡Configuración recargada exitosamente!"
+  language-changed: "&6&lWELCOMEMSG &8&l» &a¡Idioma cambiado a &e%language%&a!"
+  language-not-found: "&6&lWELCOMEMSG &8&l» &c¡Idioma &e%language% &cno encontrado!"
+  available-languages: "&6&lWELCOMEMSG &8&l» &7Idiomas disponibles: &e%languages%"
+  usage-wmreload: "&6&lWELCOMEMSG &8&l» &7Uso: &e/wmreload"
+  usage-wmlang: "&6&lWELCOMEMSG &8&l» &7Uso: &e/wmlang <idioma|list>"
+
+# Mensajes de Ayuda
+help:
+  wmreload: "Recarga la configuración del plugin"
+  wmlang: "Cambia o lista los idiomas disponibles"
