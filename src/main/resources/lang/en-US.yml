@@ -1,0 +1,40 @@
+#
+#   __          __  _                          __  __
+#   \ \        / / | |                        |  \/  |
+#   \ \  /\  / /__| | ___ ___  _ __ ___   ___| \  / |___  __ _
+#   \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ |\/| / __|/ _` |
+#   \  /\  /  __/ | (_| (_) | | | | | |  __/ |  | \__ \ (_| |
+#   \/  \/ \___|_|\___\___/|_| |_| |_|\___|_|  |_|___/\__, |
+# 1.0.0                                                __/ |
+# By Nenfal                                           |___/
+# https://github.com/MatthieuClaessens/WelcomeMessage
+#
+# English (United States) Language File
+
+# Plugin Messages
+plugin:
+  enabled: "&aWelcomeMessage plugin activated! Version 1.0"
+  disabled: "&cWelcomeMessage plugin disabled."
+  config-reloaded: "&6&lWELCOMEMSG &8&l» &aConfig reloaded!"
+  languages-reloaded: "&6&lWELCOMEMSG &8&l» &aLanguages reloaded!"
+
+# Player Messages
+messages:
+  welcome: "&eWelcome &6%player% &eto the server!"
+  join: "&a+ &6%player% &7joined the server"
+  quit: "&c- &6%player% &7left the server"
+
+# Command Messages
+commands:
+  no-permission: "&6&lWELCOMEMSG &8&l» &cYou don't have permission to use this command."
+  reload-success: "&6&lWELCOMEMSG &8&l» &aConfiguration reloaded successfully!"
+  language-changed: "&6&lWELCOMEMSG &8&l» &aLanguage changed to &e%language%&a!"
+  language-not-found: "&6&lWELCOMEMSG &8&l» &cLanguage &e%language% &cnot found!"
+  available-languages: "&6&lWELCOMEMSG &8&l» &7Available languages: &e%languages%"
+  usage-wmreload: "&6&lWELCOMEMSG &8&l» &7Usage: &e/wmreload"
+  usage-wmlang: "&6&lWELCOMEMSG &8&l» &7Usage: &e/wmlang <language|list>"
+
+# Help Messages
+help:
+  wmreload: "Reload the plugin configuration"
+  wmlang: "Change or list available languages"
