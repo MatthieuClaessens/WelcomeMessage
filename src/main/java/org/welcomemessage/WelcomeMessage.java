@@ -15,7 +15,7 @@ public class WelcomeMessage extends JavaPlugin {
     "     \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___|_|  |_|___/\\__, |",
     "                                                        __/ |",
     "                                                       |___/",
-    " Version 1.0.0 By Nenfal",
+    " Version 1.0.1 By Nenfal",
     " https://github.com/MatthieuClaessens/WelcomeMessage"
     };
 
@@ -34,7 +34,7 @@ public class WelcomeMessage extends JavaPlugin {
         for (String line : logo) {
             getLogger().info(line);
         }
-        getLogger().info("WelcomeMessage plugin activated! Version 1.0");
+        getLogger().info("WelcomeMessage plugin activated! Version 1.0.1");
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
         getConfig();
     }
