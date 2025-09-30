@@ -21,6 +21,15 @@ public class WelcomeMessage extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        new UpdateChecker(this, 127633).getVersion(version -> {
+            if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
+                getLogger().info("You are running the latest version!");
+            } else {
+                getLogger().info("new version is available: " + version);
+                getLogger().info("You can download it from: https://www.spigotmc.org/resources/welcomemessage.127633/");
+            }
+        });
+        String currentVersion = getDescription().getVersion();
         saveDefaultConfig();
         for (String line : logo) {
             getLogger().info(line);
