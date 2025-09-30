@@ -28,6 +28,3 @@ If you want to build the plugin from source using Maven:
 mvn clean package
 ```
 This will produce the JAR in the `target/` directory.
-
-Make sure your `pom.xml` contains relevant metadata, for example:
-
